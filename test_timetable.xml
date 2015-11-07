@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<timetable>
+    <period time="9">
+        <lecture module = "2E1" name = "Maths 1" location = "HAM3" />
+    </period>
+
+    <period time="10">
+        <lecture module = "2E4" name = "Solids/Structures" location = "2039" />
+    </period>
+
+    <period time="11">
+      
+    </period>
+
+    <period time="12">
+    </period>
+
+    <period time="13">
+        <tutorial />
+    </period>
+
+    <period time="14">
+    </period>
+
+    <period time="15">
+        <lab />
+    </period>
+
+    <period time="16">
+        <lab />
+    </period>
+
+    <period time="17">
+        <lab />
+    </period>
+
+
+
+</timetable>
+

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.platinum.pretengineers.InitOptions" >
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical"
+        android:weightSum="4"
+        >
+        <View
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:visibility = "invisible"
+            android:layout_weight = "1" />
+            
+    
+    	<LinearLayout
+    	    android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight = ".33"
+            android:weightSum = "6"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_height="match_parent"
+            	android:layout_width= "0dp"
+            	android:layout_weight = "1"
+            	android:visibility = "invisible" />
+                
+    	    <Spinner
+		        android:id="@+id/init_options_course"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		    	android:layout_weight= "4"
+		    />
+    	    <View
+                android:layout_height="match_parent"
+            	android:layout_width="0dp"
+            	android:layout_weight = "1"
+            	android:visibility = "invisible" />
+    	    
+    	</LinearLayout>
+    	
+    	<View
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:visibility = "invisible"
+            android:layout_weight = "1" />
+        
+    <LinearLayout
+    	    android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight = ".33"
+            android:weightSum = "6"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_height="match_parent"
+            	android:layout_width="0dp"
+            	android:layout_weight = "1"
+            	android:visibility = "invisible" />
+                
+    	    <Spinner
+		        android:id="@+id/init_options_group"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		    	android:layout_weight= "4"
+		    />
+    	    <View
+                android:layout_height="match_parent"
+            	android:layout_width="0dp"
+            	android:layout_weight = "1"
+            	android:visibility = "invisible" />
+    	    
+   </LinearLayout>
+    	
+    <View
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:visibility = "invisible"
+            android:layout_weight = ".5" />
+    
+    <LinearLayout
+       	    android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight = ".5"
+            android:weightSum = "6"
+            android:orientation="horizontal" >
+    	    
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight = "4"
+            android:visibility = "invisible" />
+        <Button
+            android:text="Next"
+            android:id="@+id/init_options_next"
+            android:layout_height = "match_parent"
+            android:layout_width="0dp"
+            android:layout_weight = "1.5"
+            android:visibility = "visible"
+            android:onClick = "next" />
+    	    
+        
+        
+    </LinearLayout>
+            
+	    
+    
+    </LinearLayout>
+
+</RelativeLayout>
