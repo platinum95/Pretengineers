@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 
 <timetable>
-    <period time="9">
+    <period time="9" type = "lecture">
         <lecture module = "2E1" name = "Maths 1" location = "HAM3" />
     </period>
 
-    <period time="10">
+    <period time="10" type = "lecture">
         <lecture module = "2E4" name = "Solids/Structures" location = "2039" />
     </period>
 

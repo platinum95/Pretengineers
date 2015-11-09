@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-	
-		
+		super.onCreate(savedInstanceState);	
 	}
+	
+	
 	@Override
 	protected void onResume(){
 		super.onResume();
@@ -33,15 +33,22 @@ public class MainActivity extends AppCompatActivity {
 			int courseInt = sharedPrefs.getInt("course", -1);
 			Common.group = groupInt;
 			Common.course = courseInt;
+			Common.courseXmlURL = getCourseURL(Common.course);
+			Common.groupXmlURL = getGroupURL(Common.group);
+			Common.getTime();
 			Intent entryIntent = new Intent(this, EntryActivity.class);
 			entryIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(entryIntent);
 			finish();
-		}
-		
-		
-		
-		
+		}	
+	}
+	
+	static String getCourseURL(int course){
+		return "http://www.ampelmann.co/pretengineers/" + Common.courseURLs[course - 1] + ".xml";
+	}
+	static String getGroupURL(int group){
+		return "http://www.ampelmann.co/pretengineers/" + Common.groupURLs[group - 1] + ".xml";
+	
 	}
 
 
